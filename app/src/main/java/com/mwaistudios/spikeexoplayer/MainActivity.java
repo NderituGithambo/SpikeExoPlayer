@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         //Get view from Resources
         playerView = findViewById(R.id.idExoPlayerVIew);
 
-        MediaItem mediaItem = MediaItem.fromUri("videoUrl");
+        MediaItem mediaItem = MediaItem.fromUri(videoUrl);
         exoPlayer = new SimpleExoPlayer.Builder(getApplicationContext()).build();
         playerView.setPlayer(exoPlayer);
 
